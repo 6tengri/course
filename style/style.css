@@ -1,0 +1,44 @@
+.container__inner {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  background-color: #dcdcdc;
+  border: 18px solid #d3d3d3;
+  padding: 10px 14px;
+}
+
+.container__flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__img {
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.container__item {
+  position: relative;
+  width: 30%;
+  padding: 0px 14px 14px 14px;
+  margin: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+.container__item h3:hover {
+  color: blue;
+}
+
+.container__item h3:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: blue;
+  bottom: 0px;
+  right: 0px;
+}
